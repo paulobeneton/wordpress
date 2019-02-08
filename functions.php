@@ -27,6 +27,8 @@ function remove_dashboard_meta() {
 		remove_meta_box( 'yoast_db_widget', 'dashboard', 'normal', 'core', 'side');
 		// gravity forms
 		remove_meta_box( 'rg_forms_dashboard', 'dashboard', 'normal', 'core', 'side');
+		// tinypng
+		remove_meta_box( 'tinypng_dashboard_widget', 'dashboard', 'normal', 'core', 'side');
 
 }
 add_action( 'admin_init', 'remove_dashboard_meta' );
